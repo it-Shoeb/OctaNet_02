@@ -1,52 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ToDo List</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
     <!-- using icons from font awersomes -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
     <!-- using font family from google font-->
-    
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav class="header-nav">
-            <div class="aside-title">
-                <p>My Dashboard</p>
-            </div>
-            <div class="header-cta">
-                <div class="search-input">
-                    <input type="text">
-                    <a href=""><i class="fas fa-search"></i></a>
-                </div>
-                <div class="mode-container">
-                    <a href=""><i class="fas fa-moon"></i></a>
-                </div>
-            </div>
-        </nav>
+      <nav class="header-nav">
+        <div class="aside-title">
+          <p>My Dashboard</p>
+        </div>
+
+        <div class="logo-container">
+          <img src="./assets/logo.png" alt="" />
+        </div>
+
+        <div class="header-cta">
+          <div class="search-input">
+            <input type="text" class="search" />
+            <a href=""><i class="fas fa-search"></i></a>
+          </div>
+          <div class="mode-container">
+            <a href="" class="moon"><i class="fas fa-moon"></i></a>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <aside class="aside-bar">
-        <nav class="aside-nav">
-            <div class="logo-container"></div>
-            <div class="nav-links"></div>
-            <div class="setting">
-                <a href="">
-                    <i class="fa-solid fa-sliders"></i>
-                </a>
-            </div>
-        </nav>
+      <nav class="aside-nav">
+        <div class="profile-container">
+          <i class="fas fa-user"></i>
+        </div>
+        <ul class="nav-links">
+          <li>
+            <img src="./assets/circle.svg" alt="" />
+            <p class="link-title">lorem ipsum</p>
+          </li>
+          <li>
+            <img src="./assets/square.svg" alt="" />
+            <p class="link-title">lorem ipsum</p>
+          </li>
+          <li>
+            <img src="./assets/triangle.svg" alt="" />
+            <p class="link-title">lorem ipsum</p>
+          </li>
+          <li>
+            <img src="./assets/hexagon.svg" alt="" />
+            <p class="link-title">lorem ipsum</p>
+          </li>
+          <li>
+            <img src="./assets/octagon.svg" alt="" />
+            <p class="link-title">lorem ipsum</p>
+          </li>
+        </ul>
+        <div class="setting">
+          <a href="">
+            <i class="fas fa-sliders-h"></i>
+          </a>
+        </div>
+      </nav>
     </aside>
 
-
-
-</body>
-
+    <script src="./script.js"></script>
+  </body>
 </html>
